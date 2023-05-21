@@ -24,7 +24,7 @@ driver = webdriver.Edge(options=options)
 ecac = 'https://cav.receita.fazenda.gov.br/autenticacao/login'
 
 # Read the CSV file into a pandas DataFrame with the desired changes
-df = pd.read_csv('PROCESSAMENTOS.csv', header=0, na_values=['NaN'], dtype={'CPF': str, 'STATUS': str, 'NOME': str, 'CÓDIGO': str, 'SENHA': str})
+df = pd.read_csv('_PROCESSAMENTOS.csv', header=0, na_values=['NaN'], dtype={'CPF': str, 'STATUS': str, 'NOME': str, 'CÓDIGO': str, 'SENHA': str})
 df = df.fillna('')
 
 # Print the first 5 rows of the DataFrame
